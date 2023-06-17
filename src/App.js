@@ -11,7 +11,7 @@ export const themeContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState(
-    localStorage.getItem("selectedTheme") || "light"
+    localStorage.getItem("selectedTheme") || "dark"
   );
 
   const toggleTheme = () => {
