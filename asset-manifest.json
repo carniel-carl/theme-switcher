@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/theme-switcher/static/css/main.c9f82da5.css",
+    "main.css": "/theme-switcher/static/css/main.7a170a2d.css",
     "main.js": "/theme-switcher/static/js/main.92364d37.js",
     "static/media/icon-instagram.svg": "/theme-switcher/static/media/icon-instagram.568b5795d56c7d9247f495cb5488f8be.svg",
     "index.html": "/theme-switcher/index.html",
@@ -9,11 +9,11 @@
     "static/media/icon-facebook.svg": "/theme-switcher/static/media/icon-facebook.8deee3e3b5c57f63a1f487e146852570.svg",
     "static/media/icon-down.svg": "/theme-switcher/static/media/icon-down.0c77426d8f1ab70c4ae629868c263878.svg",
     "static/media/icon-up.svg": "/theme-switcher/static/media/icon-up.359200b20d83a37cfb26d6de21236570.svg",
-    "main.c9f82da5.css.map": "/theme-switcher/static/css/main.c9f82da5.css.map",
+    "main.7a170a2d.css.map": "/theme-switcher/static/css/main.7a170a2d.css.map",
     "main.92364d37.js.map": "/theme-switcher/static/js/main.92364d37.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9f82da5.css",
+    "static/css/main.7a170a2d.css",
     "static/js/main.92364d37.js"
   ]
 }
