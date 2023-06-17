@@ -1,0 +1,77 @@
+@import "./../../config";
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    
+    .title {
+        p{
+            font-weight: var(--fw-bold);
+            color: var(--clr-sub-text);
+        }
+
+    }
+    .toggle{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+            color: var(--clr-sub-text);
+            font-size: var(--fs);
+            font-weight: var(--fw-bold);
+        }
+
+        .toggler {
+            position: relative;
+            display: inline-block;
+            width: 3rem;
+            height: 1.5rem;
+            border-radius: 160px;
+            background: var(--Toggle);
+            transition: 1.2s ease;
+            cursor: pointer;
+
+            .ball {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(3rem / 2);
+                // width: 1.65rem;
+                height: 1.5rem;
+                background: var(--bg);
+                border-radius: 50%;
+                transform: scale(.8);
+                transition: 1.2s ease-out;
+            }
+
+            &.dark .ball{
+                left: calc(3rem - calc(3rem / 2));
+            }
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 1em;
+
+        .title {
+            width: 100%;
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        .toggle {
+            width: 100%;
+            justify-content: space-between;
+            border-top: .8px solid var(--clr-sub-text);
+            padding-block-start: 1em;
+        }
+    }
+
+
+}

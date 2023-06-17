@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    /*  ### COLOUR ####### */
+    /*  ### Primary */
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-red: hsl(356, 69%, 56%);
+  
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --Youtube: hsl(348, 97%, 39%);
+
+    --fs: 0.9rem;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+  }
+  
+  /*  ##### UTILITY ######## */
+  
+  [data-theme="dark"] {
+    --bg: hsl(230, 17%, 14%);
+    --clr-main-text: hsl(0, 0%, 100%);
+    --clr-sub-text: hsl(228, 34%, 66%);
+    --bg-top: hsl(235, 20%, 13%);
+    --card-bg: hsl(228, 28%, 20%);
+    --Toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+  
+  [data-theme="light"] {
+    --bg: hsl(0, 0%, 100%);
+    --clr-main-text: hsl(230, 17%, 14%);
+    --clr-sub-text: hsl(228, 12%, 44%);
+    --bg-top: hsl(240, 26%, 95%);
+    --card-bg: hsl(227, 47%, 96%);
+    --Toggle: hsl(230, 22%, 74%);
+  }
+
+@mixin mobile {
+  @media screen and (width < 600px){
+    @content
+  }
+}
+  
+  

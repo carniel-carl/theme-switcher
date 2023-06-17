@@ -1,0 +1,69 @@
+@import "./../../config";
+
+.overview {
+    background: var(--card-bg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1.8rem;
+    border-radius: 5px;
+    gap: 2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.04);
+        filter:contrast(90%);     
+    }
+
+    .top,
+    .bottom {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .action {
+        color: var(--clr-sub-text);
+        font-size: var(--fs);
+        font-weight: var(--fw-bold);
+        text-transform: capitalize;
+
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .percent {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        img {
+            width: 10px;
+        }
+
+        span {
+            color: var(--clr);
+            font-size: .8rem;
+            font-weight: var(--fw-bold);
+        }
+
+    }
+
+    &.facebook,
+    &.instagram,
+    &.twitter {
+        --clr: var(--Lime-Green);
+    }
+    &.facebook:nth-child(2),
+    &.youtube {
+        --clr: var(--Bright-red);
+    }
+
+
+}
